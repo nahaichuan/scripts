@@ -1,0 +1,9 @@
+vagrant 1.9.6‚É‚µ‚Ä‚­‚¾‚³‚¢B
+virtualBox 5.1.22‚É‚µ‚Ä‚­‚¾‚³‚¢B
+
+vagrant add box springs 
+vagrant init
+vagrant up 
+
+BIOS‚æ‚èVT-x/AMD-V‚ğ—LŒø‰»
+

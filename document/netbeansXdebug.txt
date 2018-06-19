@@ -1,0 +1,28 @@
+yum install php70-php-pecl-xdebug.x86_64
+yum list installed| grep php
+
+rpm -ql 
+rpm -ql php70-php-pecl-xdebug.x86_64
+
+
+php.ini に下記を追加
+
+[Xdebug]
+;インストールしたエクステンションファイル
+zend_extension="/opt/remi/php70/root/usr/lib64/php/modules/xdebug.so"
+xdebug.profiler_enable=on
+;chmod 775 /usr/xdebug-tmp
+;xdebug.trace_output_dir="/usr/xdebug-tmp"
+;xdebug.profiler_output_dir="/usr/xdebug-tmp"
+
+xdebug.remote_enable=on
+xdebug.remote_handle=dbgp
+;ローカルのIPアドレスに設定
+xdebug.remote_host=192.168.33.1
+xdebug.remote_port=9008
+
+
+service php-fpm restart
+
+
+NetBeansの設定

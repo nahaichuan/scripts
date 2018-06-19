@@ -1,0 +1,6 @@
+git clone https://nahaichuan888@bitbucket.org/edia_co_ltd/springs.server.git
+git clone https://nahaichuan888@bitbucket.org/edia_co_ltd/springs.server.master.git
+git clone https://nahaichuan888@bitbucket.org/edia_co_ltd/springs.server.tools.git
+
+mklink /D FuelBase springs.server 
+mklink /D Master springs.server.master
